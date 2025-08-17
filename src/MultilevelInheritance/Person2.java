@@ -1,21 +1,15 @@
 package MultilevelInheritance;
-
 import java.util.Date;
-
-public class Employee1 extends Person1 {
+public class Person2 extends Person1{
 		private String deptName;
 		private double baseSalary;
 		
-		public void Employee1() {}
+		public Person2() {}
 
-		public void Employee1(String name, long contactNo, Date dateOfBirth, String deptName, double baseSalary) {
-			Super(name, contactNo, dateOfBirth);
+		public Person2(String name, long contactNo, Date dateOfBirth, String deptName, double baseSalary) {
+			super(name, contactNo, dateOfBirth);
 			this.deptName = deptName;
 			this.baseSalary = baseSalary;
-		}
-
-		private void Super(String name, long contactNo, Date dateOfBirth) {
-			
 		}
 
 		public String getDeptName() {
@@ -36,11 +30,11 @@ public class Employee1 extends Person1 {
 
 		@Override
 		public String toString() {
-			return "Employee ["+super.toString()+", deptName=" + deptName + ", baseSalary=" + baseSalary + "]";
+			return "Person2 ["+super.toString()+", deptName=" + deptName + ", baseSalary=" + baseSalary + "]";
 		}
 
 		
 	}
 
 
-}
+

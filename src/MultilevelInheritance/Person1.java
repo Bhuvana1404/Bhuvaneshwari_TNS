@@ -1,25 +1,15 @@
 package MultilevelInheritance;
-
 import java.util.Date;
-
 public class Person1 {
 		private String name;
 		private long conatctNo;
 		private Date dateOfBirth;
-
-		public Person1() {
-			System.out.println("Employee detail created");
-		}
-
-		public void Person(String name, long conatctNo, Date dateOfBirth) {
-			Super();
+	// constructor
+		public Person1(String name, long conatctNo, Date dateOfBirth) {
+			super();
 			this.name = name;
 			this.conatctNo = conatctNo;
 			this.dateOfBirth = dateOfBirth;
-		}
-
-		private void Super() {
-			
 		}
 
 		public String getName() {
@@ -46,9 +36,15 @@ public class Person1 {
 			this.dateOfBirth = dateOfBirth;
 		}
 
+		public Person1() {
+		}
+
 		@Override
 		public String toString() {
-			return "Person [name=" + name + ", conatctNo=" + conatctNo + ", dateOfBirth=" + dateOfBirth + "]";
+			return "Person1 [name=" + name + ", conatctNo=" + conatctNo + ", dateOfBirth=" + dateOfBirth + "]";
 		}
 
 	}
+
+
+
